@@ -17,3 +17,40 @@ function fahrenheitToCelsius(fahrenheit) {
 // Example Usage
 console.log("25°C to Fahrenheit:", celsiusToFahrenheit(25));
 console.log("77°F to Celsius:", fahrenheitToCelsius(77));
+
+// BMI Calculator
+
+function calculateBMI(weight, height) {
+    if (
+        typeof weight !== "number" || 
+        typeof height !== "number" ||
+        isNaN(weight) || 
+        isNaN(height) ||
+        weight <= 0 || 
+        height <= 0
+    ) {
+        return "Invalid input! Please enter valid positive numbers.";
+    }
+
+    const bmi = weight / (height * height);
+
+    let category = "";
+
+    if (bmi < 18.5) {
+        category = "Underweight";
+    } else if (bmi < 24.9) {
+        category = "Normal weight";
+    } else if (bmi < 29.9) {
+        category = "Overweight";
+    } else {
+        category = "Obese";
+    }
+
+    return {
+        bmi: bmi.toFixed(2),
+        category: category
+    };
+}
+
+// Example Usage
+console.log(calculateBMI(70, 1.75));
