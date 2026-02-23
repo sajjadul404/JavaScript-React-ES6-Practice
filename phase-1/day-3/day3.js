@@ -24,3 +24,17 @@ highExpenses.forEach(expense => {
   console.log(`${expense.title}: ${expense.amount}`);
 });
 
+//Convert currency (BDT → USD)
+const exchangeRate = 110; // 1 USD = 110 BDT
+
+const convertedExpenses = expenses.map(expense => {
+  return {
+    title: expense.title,
+    amountUSD: (expense.amount / exchangeRate).toFixed(2)
+  };
+});
+
+console.log("\nExpenses in USD:");
+convertedExpenses.forEach(expense => {
+  console.log(`${expense.title}: $${expense.amountUSD}`);
+});
