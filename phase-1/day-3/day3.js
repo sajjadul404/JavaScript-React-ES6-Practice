@@ -8,3 +8,11 @@ const expenses = [
 ];
 
 console.log("===== EXPENSE SUMMARY =====");
+
+//Calculate Total using reduce()
+const totalExpense = expenses.reduce((total, expense) => {
+  return total + expense.amount;
+}, 0);
+
+console.log("Total Expense:", totalExpense);
+
