@@ -38,3 +38,12 @@ console.log("\nExpenses in USD:");
 convertedExpenses.forEach(expense => {
   console.log(`${expense.title}: $${expense.amountUSD}`);
 });
+
+//Full Summary Object
+const expenseSummary = {
+  totalBDT: totalExpense,
+  totalUSD: (totalExpense / exchangeRate).toFixed(2),
+  highExpenseCount: highExpenses.length
+};
+
+console.log("\nFinal Summary:", expenseSummary);
