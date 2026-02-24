@@ -33,3 +33,9 @@ user.removeSkill("React");
 user.updateAge(23);
 
 console.log(user);
+
+const { name, age, skills } = user;
+
+console.log(name);
+console.log(age);
+console.log(skills);
