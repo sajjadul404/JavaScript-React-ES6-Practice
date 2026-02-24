@@ -39,3 +39,12 @@ const { name, age, skills } = user;
 console.log(name);
 console.log(age);
 console.log(skills);
+
+const {
+  name: userName,
+  address: { city, country }
+} = userProfile;
+
+console.log(userName);
+console.log(city);
+console.log(country);
