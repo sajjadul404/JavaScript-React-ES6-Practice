@@ -26,3 +26,10 @@ const user = {
     }
   }
 };
+
+user.addSkill("JavaScript");
+user.addSkill("React");
+user.removeSkill("React");
+user.updateAge(23);
+
+console.log(user);
