@@ -1,5 +1,4 @@
 // Temperature Converter
-
 function celsiusToFahrenheit(celsius) {
     if (typeof celsius !== "number" || isNaN(celsius)) {
         return "Invalid input! Please enter a valid number.";
@@ -19,7 +18,6 @@ console.log("25°C to Fahrenheit:", celsiusToFahrenheit(25));
 console.log("77°F to Celsius:", fahrenheitToCelsius(77));
 
 // BMI Calculator
-
 function calculateBMI(weight, height) {
     if (
         typeof weight !== "number" || 
