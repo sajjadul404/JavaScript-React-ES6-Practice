@@ -50,6 +50,22 @@
 
     let count = 0;
 
+        // Function to update UI
+    function updateCounter() {
+      counter.textContent = count;
+
+      // Change color based on value using classList
+      if (count > 0) {
+        counter.classList.add("increase");
+        counter.classList.remove("decrease");
+      } else if (count < 0) {
+        counter.classList.add("decrease");
+        counter.classList.remove("increase");
+      } else {
+        counter.classList.remove("increase", "decrease");
+      }
+    }
+    
   </script>
 
 </body>
