@@ -84,7 +84,10 @@
       updateCounter();
     });
 
-    
+    // Example of createElement (extra feature)
+    const message = document.createElement("p");
+    message.textContent = "Click buttons to change the counter!";
+    document.body.appendChild(message);
   </script>
 
 </body>
