@@ -76,7 +76,24 @@
       }
     }
 
-    
+    increaseBtn.addEventListener("click", function () {
+      count++;
+      updateCounter();
+    });
+
+    decreaseBtn.addEventListener("click", function () {
+      count--;
+      updateCounter();
+    });
+
+    resetBtn.addEventListener("click", function () {
+      count = 0;
+
+      // Remove from storage
+      localStorage.removeItem("count");
+
+      updateCounter();
+    });
   </script>
 
 </body>
