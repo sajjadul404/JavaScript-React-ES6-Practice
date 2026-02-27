@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter App with LocalStorage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .counter {
+      font-size: 50px;
+      margin: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .increase { background-color: green; color: white; }
+    .decrease { background-color: red; color: white; }
+    .reset { background-color: gray; color: white; }
+  </style>
+</head>
+<body>
+
+  <h1>Counter App</h1>
+
+  <div class="counter">0</div>
+
+  <button class="btn decrease">Decrement</button>
+  <button class="btn reset">Reset</button>
+  <button class="btn increase">Increment</button>
+
+  <script>
+    const counter = document.querySelector(".counter");
+    const increaseBtn = document.querySelector(".increase");
+    const decreaseBtn = document.querySelector(".decrease");
+    const resetBtn = document.querySelector(".reset");
+
+    // Get saved value from localStorage
+    let count = localStorage.getItem("count");
+
+
+  </script>
+
+</body>
+</html>
