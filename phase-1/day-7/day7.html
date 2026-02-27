@@ -48,6 +48,13 @@
     // Get saved value from localStorage
     let count = localStorage.getItem("count");
 
+    
+    // If no saved value, default = 0
+    if (count === null) {
+      count = 0;
+    } else {
+      count = Number(count);
+    }
 
   </script>
 
