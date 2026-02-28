@@ -3,7 +3,6 @@ const posts = [
   { title: "Post One", body: "This is post one" },
   { title: "Post Two", body: "This is post two" }
 ];
-
 // Fake API function using Promise
 function getPosts() {
   return new Promise((resolve, reject) => {
@@ -18,7 +17,6 @@ function getPosts() {
     }, 1000); 
   });
 }
-
 // Using then and catch
 getPosts()
   .then(function(data) {
