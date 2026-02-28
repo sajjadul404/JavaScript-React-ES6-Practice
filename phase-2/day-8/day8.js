@@ -19,3 +19,13 @@ function getPosts() {
   });
 }
 
+// Using then and catch
+getPosts()
+  .then(function(data) {
+    console.log("Posts received:");
+    console.log(data);
+  })
+  .catch(function(error) {
+    console.log("Error received:");
+    console.log(error);
+  });
