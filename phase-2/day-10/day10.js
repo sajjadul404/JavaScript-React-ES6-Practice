@@ -19,7 +19,7 @@ async function fetchJoke() {
     }
 
     const data = await response.json();
-    jokeText.textContent = `${data.setup} 😂 ${data.punchline}`;
+    jokeText.textContent = `${data.setup} ${data.punchline}`;
   } 
   catch (error) {
     errorText.textContent = "Error: " + error.message;
