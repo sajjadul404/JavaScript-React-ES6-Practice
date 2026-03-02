@@ -17,4 +17,5 @@ async function getJoke() {
     console.log(error);
   }
 }
-
+// button click
+button.addEventListener("click", getJoke);
