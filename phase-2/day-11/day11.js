@@ -9,6 +9,9 @@ const users = [
 const sortedByAge = [...users].sort((a, b) => a.age - b.age);
 console.log("Sorted by age:", sortedByAge);
 
+// Filter active users
+const activeUsers = users.filter(user => user.active);
+console.log("Active users:", activeUsers);
 
 console.log("Total users:", totalUsers);
 console.log("Total active users:", totalActiveUsers);
