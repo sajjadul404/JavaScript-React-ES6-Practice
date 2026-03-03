@@ -13,5 +13,11 @@ console.log("Sorted by age:", sortedByAge);
 const activeUsers = users.filter(user => user.active);
 console.log("Active users:", activeUsers);
 
+// Count totals
+const totalUsers = users.reduce((total) => total + 1, 0);
+const totalActiveUsers = users.reduce(
+  (total, user) => user.active ? total + 1 : total,
+  0
+);
 console.log("Total users:", totalUsers);
 console.log("Total active users:", totalActiveUsers);
